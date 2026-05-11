@@ -1,4 +1,4 @@
-import { registerAbility } from '@wordpress/abilities';
+const { registerAbility } = wp.abilities;
 
 registerAbility('my-plugin/summarize-selection', {
   title: 'Summarize Selection',
@@ -7,6 +7,6 @@ registerAbility('my-plugin/summarize-selection', {
     return selection && selection.length > 0;
   },
   perform: async ({ selection }) => {
-    // Implementasi akan ditambahkan di step selanjutnya
+    // Implementasi di step selanjutnya
   },
 });
